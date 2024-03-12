@@ -1,0 +1,95 @@
+.twhite {
+	color: var(--white1);
+}
+.tblack {
+	color: var(--black);
+}
+.tblue {
+	color: var(--blue10);
+}
+
+h1 .display, h1, h2, h3, h4, h5, a {
+	font-family: fino-sans, sans-serif;
+	letter-spacing: 4%;
+}
+h1 .display, h1, h3, h5, label, a {
+	font-style: bold;
+	font-weight: 800;
+}
+h2, h4 {
+	font-style: thin;
+	font-weight: 100;
+}
+
+h1 .display {
+	font-size: 3em;
+	padding: 0px;
+}
+h1 {
+	font-size: 2.2em;
+	padding-bottom:60px;
+}
+
+h2 {
+	font-size: 2em;
+	padding-bottom: 60px;
+}
+
+h3 {
+	font-size: 1.5em;
+	padding-bottom: 30px;
+}
+
+h4 {
+	font-size: 1.5em;
+	padding-bottom: 16px;
+}
+
+h5 {
+	font-size: 1em;
+	padding-bottom: 16px;
+}
+
+p .emp {
+	font-family: baskerville, serif;
+	text-transform: capitalize;
+	font-size: .8em;
+	letter-spacing: 4%;
+	font-style: semi-bold;
+	font-weight: 600;
+	padding: 60px 0px 30px 0px;
+}
+
+p {
+	font-family: baskerville, serif;
+	font-size: 1em;
+	line-height: 120%;
+	font-style: regular;
+	font-weight: 400;
+	padding-bottom: 16px;
+}
+
+p .subtext {
+	font-family: baskerville, serif;
+	font-size: .7em;
+	line-height: 120%;
+	font-style: regular;
+	font-weight: 400;
+	padding-bottom:30px;
+}
+
+
+label {
+	font-family: baskerville, serif;
+	color: var(--grey5);
+	width: calc(50% - 10px);
+	margin: 20px 0px 2px 10px;
+}
+
+.navBox > a {
+	font-size: 1.5em;
+	text-decoration: none;
+	align-items: right;
+	margin-right: 60px;
+	transform: translate(0, 15px);
+}

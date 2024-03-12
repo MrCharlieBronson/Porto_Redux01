@@ -1,0 +1,53 @@
+/* --------------------------------------------- */
+/* This is the code needed for the form elements */
+/* --------------------------------------------- */
+
+
+
+.inputContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+input {
+	border: 1px solid var(--gold10);
+	justify-content: stretch;
+	width: 80%;
+	padding: 2px 5px;
+}
+
+.inputContainer {
+	height: 40px;
+}
+.inputSpacer {
+	width: 8px;
+	border: 1px solid var(--gold10);
+	justify-content: stretch;
+}
+
+
+.inputContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+textarea {
+	border: 1px solid var(--gold10);
+	justify-content: stretch;
+	width: 80%;
+	padding: 2px 5px;
+}
+
+.inputContainer {
+	height: 40px;
+}
+.textareaContainer {
+	height: 250px;
+}
+.inputSpacer {
+	width: 8px;
+	border: 1px solid var(--gold10);
+	justify-content: stretch;
+}

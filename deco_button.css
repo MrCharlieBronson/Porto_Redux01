@@ -1,0 +1,169 @@
+/* ------------------------------------------------- */
+/* This is the code needed for the elevated platform */
+/* ------------------------------------------------- */
+
+/* --------- Active Button --------------------------*/
+.buttonRound, .buttonText {
+  background-color: var(--blue10);
+  border: 2px solid var(--gold5);
+}
+.buttonRound {
+  padding: 7px 0;
+  width: 200px;
+  height: auto;
+  border-radius: 40px;
+  display: block;
+}
+.buttonText {
+  padding:5px;
+  width: 97%;
+  font-family: fino-sans, san-serif;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 2%;
+}
+
+.active, .active:hover {
+  border: 1px solid var(--gold5);
+  color: var(--gold5);
+}
+.active {
+  background-color: rgba(45, 90, 100, 0.7);
+}
+.active:hover {
+  background-color: rgba(57, 57, 58, 0.7);
+}
+.lined {
+  background-color: inherit;
+  border: 2px solid var(--gold10);
+  color: var(--gold10);
+}
+
+.disabled {
+  background-color: rgba(138, 138, 138, 0.7);
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+
+/* ----------Call to Action -----------------------*/
+.buttonHole {
+  display: flex;
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.upArrow, .downArrow {
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+}
+.upArrow {
+  background-image: url("assets/CTA_ArrowUp.svg");
+}
+.downArrow {
+  background-image: url("assets/CTA_ArrowDown.svg");
+}
+.buttonHole > h1 {
+  color: var(--black);
+  font-family: fino-sans, sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  padding: 5px 0;
+  font-size: 2.2em;
+}
+
+/* ---------- Footer Link -----------------------*/
+.footer {
+  font-family: fino-sans, san-serif;
+  font-size: 2em;
+  color: var(--gold5);
+  border-bottom: 5px solid var(--grey5);
+  width: 220px;
+  text-align: center;
+  height: 29px;
+  letter-spacing: 5%;
+}
+
+
+/* ---------- Hamburger button -----------------*/
+
+.checkbox {
+  width: 48px;
+  height: 40px;
+  border: 1px solid var(--gold10);
+  border-radius: 15px;
+  background-color: none;
+}
+.hamburger-lines {
+  width: 92%;
+  height: 92%;
+  border: 1px solid var(--gold10);
+  margin: 2px auto;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.line {
+  width: 80%;
+  height: 2px;
+  border: 1px solid var(--gold10);
+  align-items: space-around;
+  margin: auto;
+}
+
+
+/* This is for animation. Keep to use for later ----------
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+  background-color: green;
+}
+
+.hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #0e2431;
+}
+
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+--------------------------------------------------------*/

@@ -1,0 +1,308 @@
+/* DEFINING VARIABLES
+-- Beginning with colors
+
+*/
+
+:root {
+  --black: #39393A;
+
+  --gold10: #BD8801;
+  --gold5: #FFC635;
+
+  --blue10: #2D5A64;
+  --blue6: #62919B;
+  --blue4: #87ADB5;
+  --blue1: #B5D5DD;
+
+  --grey5: #8A8A8A;
+  --white1: #FBFBFB;
+  --white0: #ffffff;
+
+  /* Coding example, add: var(--blue); */
+
+}
+.row {
+  min-height: 100px;
+}
+
+/* --------------------------------------------------------- */
+/* This is the code needed for different sections of content */
+/* --------------------------------------------------------- */
+
+header {
+  height: 540px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+/*
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  background-color: pink;
+}
+section .sectionLeft{
+  width: 50%;
+}
+*/
+
+/* -------------------------------------------- */
+/* This is the code needed for the border frame */
+/* -------------------------------------------- */
+.row > img {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.border, .borderSq, .borderFr {
+  border: 1px solid var(--gold10) !important;
+}
+.bt, .ft {
+  top: 0;
+}
+.bb, .fb {
+  bottom: 0;
+}
+.br, .fr {
+  right: 0;
+}
+.bl, .fl {
+  left: 0;
+}
+.border {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 50px;
+  position: relative;
+  padding: 16px 30px;
+}
+.imgContainer {
+  display: block;
+  width: 300px;
+  height: 600px;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.imgContainer > img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.borderSq {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.btl {
+  transform: translate(-15px, -15px);  
+}
+.btr {
+  transform: translate(15px, -15px);
+}
+.bbl {
+  transform: translate(-15px, 15px);
+}
+.bbr {
+  transform: translate(15px, 15px);
+}
+
+.borderFr {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+}
+.ftl {
+  transform: translate(4px, 4px);
+  border-right: none;
+  border-bottom: none;
+}
+.ftr {
+  transform: translate(-4px, 4px);
+  border-left: none;
+  border-bottom: none;
+}
+.fbl {
+  transform: translate(4px, -4px);
+  border-top: none;
+  border-right: none;
+}
+.fbr {
+  transform: translate(-4px, -4px);
+  border-top: none;
+  border-left: none;
+}
+
+/* ----------------------------------------- */
+/* This is the code needed for the hero dips */
+/* ----------------------------------------- */
+.one, .two {
+  box-shadow: inset 2px 2px 7px var(--grey5);
+  border: .5px solid var(--blue1);
+  background-color: #fff;
+  border-radius: 15%;
+  display: block;
+}
+.one {
+  width: 30%;
+  height: 450px;
+}
+
+.two {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  left: 2.5%;
+  top: 2.5%;
+}
+
+.hole {
+  background-color: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole:hover {
+  background-color: #333;
+  box-shadow: inset 0 0 30px yellow;
+}
+
+header > img {
+  height: 540px;
+  width: auto;
+}
+
+/* ------------------------------------------- */
+/* This is the code needed for the footer dips */
+/* ------------------------------------------- */
+footer, .stepDown {
+  box-shadow: inset 2px 2px 7px var(--black);
+  border: .5px solid var(--grey5);
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  background-color: rgba(58, 58, 58, 0.4);
+}
+footer { 
+  height: 600px;
+  margin-top: 100px;
+}
+
+.stepDown {
+  bottom: 0;
+  height: 97%;
+  position: absolute;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+  
+}
+.footChild {
+  height: 400px;
+  background-color: yellow;
+}
+
+/* ------------------------------------------- */
+/* This is the code needed for the footer dips */
+/* ------------------------------------------- */
+.outsides {
+  display: flex;
+  height: 100px;
+}
+.wing, .middle {
+  padding: 0px;
+  margin: 0px;
+}
+.lines {
+  border: 2px solid #BD8801;
+}
+
+.wing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* background-color: grey; */
+}
+.wingLine {
+  width: 95%;
+  height: 0px;
+}
+.leftBox, .rightBox {
+  height: 20px;
+  width: 85%;
+}
+.leftBox { 
+  float: right;
+  translate: -20px -12px;
+}
+.rightBox {
+  float: left;
+  translate: 20px -12px;
+}
+.middle {
+  display: flex;
+  width: 150px;
+  flex-direction: row;
+  align-items: center;
+}
+.midBox {
+  width: 60px;
+  height: 45px;
+  transform: rotate(45deg);
+}
+
+/* ------------------------------------------------- */
+/* This is the code needed for the elevated platform */
+/* ------------------------------------------------- */
+.platform {
+  border-radius: 15%;
+  width: 300px; 
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 7px rgba(137, 137, 137, 0.4),
+  -3px -3px 7px rgba(255, 198, 53, 0.4);
+}
+
+
+/* --------------------------------------- */
+/* This is the code needed for the nav bar */
+/* --------------------------------------- */
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: var(--white1);
+  border-bottom: 10px solid var(--gold10);
+}
+nav > img {
+  margin-left: 60px;
+  margin-top: 27px;
+  height: 100px;
+  width: 100px;
+
+}
+.navBox {
+  width: 300px;
+  height: 100%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
